@@ -22,13 +22,11 @@ user.premium = 'false';
 console.log(user);
 
 const keys = Object.keys(user);
-console.log(user);
+
 
 for (const key of keys) {
-  const showAllKeys = function (obj) {
-    let result = "";
-  }
   
+  console.log(`${key} : ${user[key]}`);
 }
 
 

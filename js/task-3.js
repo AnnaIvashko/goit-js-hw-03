@@ -3,9 +3,24 @@
 // Сотрудники и кол - во выполненых задач содержатся как
 // свойства объекта в формате "имя": "кол-во задач".
 
-const findBestEmployee = function(employees) {
-  // твой код
-};
+// const findBestEmployee = function (employees) {
+//   let max = 0;
+//   let bestEmployee = "";
+//    for (const key in employees) {
+//     if (employees[key] > max);
+//     max = employees[key];
+//     bestEmployee = max; 
+//   }
+//   return bestEmployee;
+// }
+
+const findBestEmployee = function (employees) {
+  for (const employee in employees) {
+    if (employees[employee] === Math.max(...Object.values(employees)))
+      return employee;
+  }
+}
+
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
