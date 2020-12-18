@@ -12,7 +12,7 @@ const user = {
 };
 console.log(user);
 
-user.mood = ['happy'];
+user.mood = 'happy';
 console.log(user);
 
 user.hobby = 'skydiving';

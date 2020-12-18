@@ -10,16 +10,13 @@ const products = [
 ];
 
 const getAllPropValues = function (arrey, prop) {
+
   const newArrey = [];
-  for (const arr of arrey) {
-    const keys = Object.keys(arr);
-    for (const key of keys) {
-      if (prop === key) {
-        newArrey.push(arr[prop]);
-      }
-    }
-  }
-  return newArrey;
+  for (const item of arrey) {
+    if (prop in item) {
+    newArrey.push(item[prop]);
+  }  
+    }  return newArrey;
 }
  
  
